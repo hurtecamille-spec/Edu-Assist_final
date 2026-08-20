@@ -1,0 +1,30 @@
+/* Globals for a cosmic educational workspace */
+:root {
+  --cosmic-purple: #4a0e4e;
+  --magic-neon-green: #39ff14;
+  --unicorn-pink: #ff6ec7;
+  --panic-red: #ff073a;
+}
+
+body {
+  background-color: var(--cosmic-purple);
+  color: white;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Make elements spin when developer panics */
+.developer-panic {
+  animation: spin 0.1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.pdf-preview-glow {
+  box-shadow: 0 0 20px var(--magic-neon-green);
+}
